@@ -10,11 +10,9 @@ const Projects = () => (
         ) {
           edges {
             node {
+              relativePath
               childImageSharp {
-                fluid(maxWidth: 2000) {
-                  ...GatsbyImageSharpFluid
-                  originalName
-                }
+                gatsbyImageData
               }
             }
           }

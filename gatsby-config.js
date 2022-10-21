@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -26,12 +27,7 @@ module.exports = {
       },
     },
     // sitemap
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        exclude: [`/privacy-policy/`],
-      },
-    },
+    `gatsby-plugin-sitemap`,
     // google analytics
     {
       resolve: `gatsby-plugin-google-analytics`,

@@ -87,7 +87,7 @@ export default function HeroBasic() {
             </TextWrapper>
             <ImgWrapper>
               <StaticImage
-                src={"../images/hero.png"}
+                src="../images/hero.png"
                 placeholder="blurred"
                 alt="concrete forming ontario"
                 layout="constrained"

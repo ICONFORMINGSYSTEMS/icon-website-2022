@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { Dialog } from "@reach/dialog"
 import "@reach/dialog/styles.css"
@@ -122,20 +122,21 @@ export default class Lightbox extends Component {
             <LightboxContainer>
               {projectImages.map(image => (
                 <PreviewButton
-                  key={image.node.childImageSharp.fluid.src}
+                  key={image.node.childImageSharp.gatsbyImageData}
                   type="button"
                   onClick={() => {
                     this.setState({ showLightbox: true, selectedImage: image })
                     document.getElementById("header").style.display = "none"
                   }}
                 >
-                  <Img
-                    fluid={image.node.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={image.node.childImageSharp.gatsbyImageData}
+                    alt=""
                     className="img"
                   />
                   <ProjectText>
                     <p>
-                      {image.node.childImageSharp.fluid.originalName
+                      {image.node.relativePath
                         .split("-")
                         .join(" ")
                         .replace(".png", "")}
@@ -156,14 +157,15 @@ export default class Lightbox extends Component {
                   Close
                 </Close>
                 <p className="body body--large">
-                  {selectedImage.node.childImageSharp.fluid.originalName
+                  {selectedImage.node.relativePath
                     .split("-")
                     .join(" ")
                     .replace(".png", "")}
                 </p>
-                <Img
+                <GatsbyImage
                   style={imgStyle}
-                  fluid={selectedImage.node.childImageSharp.fluid}
+                  image={selectedImage.node.childImageSharp.gatsbyImageData}
+                  alt=""
                 />
               </Dialog>
             )}

@@ -136,7 +136,7 @@ export default function HeaderBasic() {
             <LogoContainer>
               <Link to="/">
                 <StaticImage
-                  src={"../../images/logo-full.svg"}
+                  src="../../images/logo-full.svg"
                   alt="Icon Forming Systems Inc."
                   placeholder="blurred"
                   height={50}
