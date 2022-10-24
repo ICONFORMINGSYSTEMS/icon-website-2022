@@ -411,7 +411,14 @@ export default function Services() {
                 <li>Construction Equipment</li>
               </List>
             </div>
-            <BrochureLink />
+            <Actions>
+              <AnchorSecondaryDark
+                href="../../../brochures/concrete-accessories.pdf"
+                target="_popup"
+              >
+                product brochure
+              </AnchorSecondaryDark>
+            </Actions>
           </div>
           <div>
             <StaticImage
