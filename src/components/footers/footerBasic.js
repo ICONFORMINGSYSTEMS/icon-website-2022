@@ -138,10 +138,10 @@ export default function Footer() {
             <FlexItem className="spacing">
               <h2 className="heading">support</h2>
               <ul>
-                <li className="italics">Corporate Office:</li>
-                <li>38 Simpson Rd</li>
-                <li>Bolton, ON</li>
-                <li>L7E 1Y4</li>
+                <li className="italics">Mailing Address:</li>
+                <li>8005 Financial Drive Unit A4</li>
+                <li>Brampton, ON</li>
+                <li>L6Y 6A1</li>
                 <li>Canada</li>
               </ul>
               <ul>

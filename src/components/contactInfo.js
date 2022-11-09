@@ -7,7 +7,9 @@ export default function ContactInfo() {
     <div className="spacing">
       <div>
         <p className="body--large">{Info.name}</p>
-        <p>Corporate Office - 38 Simpson Rd, Bolton, Ontario, L7E 1Y4</p>
+        <p>
+          Mailing Address - 8005 Financial Drive Unit A4, Brampton, Ont, L6Y 6A1
+        </p>
         <p>Yard Office - 6650 Pacific Circle, Mississauga, Ontario L5T 1V6</p>
       </div>
       <div>
